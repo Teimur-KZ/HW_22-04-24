@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}
+{{ product.title }} - Интернет-магазин
+{% endblock %}
+{% block content %}
+<table class="table table-striped">
+    <tr>
+        <td>Название товара: {{ product.name }}</td>
+    </tr>
+    <tr>
+        <td>Описание товара: {{ product.description }}</td>
+    </tr>
+    <tr>
+        <td>Цена товара: {{ product.price }}</td>
+    </tr>
+    <tr>
+        <td>Количество товара: {{ product.quantity }}</td>
+    </tr>
+    <tr>
+        <td>Сумма заказа: {{ product.total_price }}</td>
+    </tr>
+    <tr>
+        <td><a href="{% url 'client_orders' client.id %}">Вернуться к заказам клиента</a></td>
+    </tr>
+</table>
+{% endblock %}
