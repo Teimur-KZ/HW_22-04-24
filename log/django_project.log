@@ -3035,3 +3035,194 @@ INFO 2024-05-01 21:14:32,184 basehttp 18612 23004 "GET / HTTP/1.1" 200 6152
 INFO 2024-05-01 21:14:33,012 basehttp 18612 23004 "GET /about/ HTTP/1.1" 200 5591
 INFO 2024-05-01 21:14:33,937 basehttp 18612 23004 "GET /clients/all/ HTTP/1.1" 200 8866
 INFO 2024-05-01 21:14:37,975 basehttp 18612 23004 "GET / HTTP/1.1" 200 6152
+INFO 2024-05-01 21:32:32,850 autoreload 11176 11520 Watching for file changes with StatReloader
+INFO 2024-05-01 21:32:37,419 basehttp 11176 21788 "GET /clients/all/ HTTP/1.1" 200 8866
+INFO 2024-05-01 21:32:39,467 basehttp 11176 21788 "GET /client_about/1/ HTTP/1.1" 200 6179
+INFO 2024-05-01 21:33:51,407 basehttp 11176 14492 "GET /clients/all/ HTTP/1.1" 200 8866
+INFO 2024-05-01 21:33:53,032 basehttp 11176 14492 "GET /client_about/2/ HTTP/1.1" 200 6180
+INFO 2024-05-01 21:33:55,134 basehttp 11176 14492 "GET /clients/2/ HTTP/1.1" 200 7857
+INFO 2024-05-01 21:34:02,252 basehttp 11176 14492 "GET /clients/all/ HTTP/1.1" 200 8866
+INFO 2024-05-01 21:34:04,484 basehttp 11176 14492 "GET /clients/all/ HTTP/1.1" 200 8866
+INFO 2024-05-01 21:34:05,568 basehttp 11176 14492 "GET /about/ HTTP/1.1" 200 5591
+INFO 2024-05-01 21:34:07,133 basehttp 11176 14492 "GET /clients/all/ HTTP/1.1" 200 8866
+INFO 2024-05-01 21:34:08,634 basehttp 11176 14492 "GET /client_about/1/ HTTP/1.1" 200 6179
+INFO 2024-05-01 21:34:10,672 basehttp 11176 14492 "GET /clients/1/ HTTP/1.1" 200 7815
+INFO 2024-05-01 21:38:33,214 basehttp 11176 14492 "GET /products/4/ HTTP/1.1" 200 5915
+INFO 2024-05-01 21:46:53,485 basehttp 11176 20248 "GET /clients/1/ HTTP/1.1" 200 7815
+INFO 2024-05-01 21:46:56,333 basehttp 11176 4940 "GET /products/4/ HTTP/1.1" 200 5975
+INFO 2024-05-01 21:48:16,065 basehttp 11176 14176 "GET /clients/all/ HTTP/1.1" 200 8866
+INFO 2024-05-01 21:48:19,757 basehttp 11176 14176 "GET /clients/1/ HTTP/1.1" 200 7815
+INFO 2024-05-01 21:48:21,830 basehttp 11176 14176 "GET /products/4/ HTTP/1.1" 200 5975
+INFO 2024-05-01 21:49:40,782 basehttp 11176 22448 "GET /products/4/ HTTP/1.1" 200 6000
+INFO 2024-05-01 21:49:48,064 basehttp 11176 17860 "GET /clients/1/ HTTP/1.1" 200 7815
+INFO 2024-05-01 21:50:05,582 basehttp 11176 4904 "GET /products/4/ HTTP/1.1" 200 6000
+INFO 2024-05-01 21:50:19,963 basehttp 11176 17548 "GET /products/1/ HTTP/1.1" 200 5999
+INFO 2024-05-01 21:51:41,414 basehttp 11176 9012 "GET /products/4/ HTTP/1.1" 200 5975
+INFO 2024-05-01 21:51:50,797 basehttp 11176 21472 "GET /clients/all/ HTTP/1.1" 200 8866
+INFO 2024-05-01 21:51:52,679 basehttp 11176 21472 "GET /client_about/8/ HTTP/1.1" 200 6180
+INFO 2024-05-01 21:51:54,222 basehttp 11176 21472 "GET /clients/8/ HTTP/1.1" 200 7857
+INFO 2024-05-01 21:51:56,095 basehttp 11176 16892 "GET /products/9/ HTTP/1.1" 200 5975
+INFO 2024-05-01 21:57:09,106 autoreload 11176 11520 C:\GB\Homework\22.04.24\hw_seminar_3\myapp\views.py changed, reloading.
+INFO 2024-05-01 21:57:11,218 autoreload 17004 16336 Watching for file changes with StatReloader
+INFO 2024-05-01 21:57:14,012 basehttp 17004 8896 "GET /client_about/1/ HTTP/1.1" 200 6179
+INFO 2024-05-01 21:57:15,824 basehttp 17004 844 "GET /clients/1/ HTTP/1.1" 200 7815
+INFO 2024-05-01 21:57:19,756 basehttp 17004 844 "GET /products/4/ HTTP/1.1" 200 5975
+INFO 2024-05-01 21:57:25,339 basehttp 17004 844 "GET /products/4/ HTTP/1.1" 200 5975
+INFO 2024-05-01 21:58:27,645 autoreload 17004 16336 C:\GB\Homework\22.04.24\hw_seminar_3\myapp\views.py changed, reloading.
+INFO 2024-05-01 21:58:29,405 autoreload 22728 1400 Watching for file changes with StatReloader
+INFO 2024-05-01 21:58:30,850 basehttp 22728 576 "GET /clients/1/ HTTP/1.1" 200 7815
+ERROR 2024-05-01 21:58:32,045 log 22728 576 Internal Server Error: /products/4/
+Traceback (most recent call last):
+  File "C:\GB\.venvGB\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\Homework\22.04.24\hw_seminar_3\myapp\views.py", line 117, in product_full
+    order = Order.objects.get(product=product)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\db\models\query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+myapp.models.Order.MultipleObjectsReturned: get() returned more than one Order -- it returned 11!
+ERROR 2024-05-01 21:58:32,059 basehttp 22728 576 "GET /products/4/ HTTP/1.1" 500 145
+ERROR 2024-05-01 21:58:35,234 log 22728 576 Internal Server Error: /products/4/
+Traceback (most recent call last):
+  File "C:\GB\.venvGB\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\Homework\22.04.24\hw_seminar_3\myapp\views.py", line 117, in product_full
+    order = Order.objects.get(product=product)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\db\models\query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+myapp.models.Order.MultipleObjectsReturned: get() returned more than one Order -- it returned 11!
+ERROR 2024-05-01 21:58:35,250 basehttp 22728 576 "GET /products/4/ HTTP/1.1" 500 145
+INFO 2024-05-01 22:02:34,381 autoreload 22728 1400 C:\GB\Homework\22.04.24\hw_seminar_3\myapp\views.py changed, reloading.
+INFO 2024-05-01 22:02:36,309 autoreload 13084 23500 Watching for file changes with StatReloader
+INFO 2024-05-01 22:02:38,433 basehttp 13084 3592 "GET /clients/1/ HTTP/1.1" 200 7815
+ERROR 2024-05-01 22:02:40,020 log 13084 3592 Internal Server Error: /products/4/
+Traceback (most recent call last):
+  File "C:\GB\.venvGB\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\Homework\22.04.24\hw_seminar_3\myapp\views.py", line 118, in product_full
+    return render(request, 'product_full.html', {'product': product, 'client': client, 'title': 'Полный товар', 'price': product.price, 'add_data': product.add_data}, {'order': order})
+                                                                                                                                                                                 ^^^^^
+NameError: name 'order' is not defined. Did you mean: 'Order'?
+ERROR 2024-05-01 22:02:40,037 basehttp 13084 3592 "GET /products/4/ HTTP/1.1" 500 145
+INFO 2024-05-01 22:02:44,051 basehttp 13084 3592 "GET /clients/all/ HTTP/1.1" 200 8866
+INFO 2024-05-01 22:02:45,850 basehttp 13084 3592 "GET /clients/1/ HTTP/1.1" 200 7815
+ERROR 2024-05-01 22:02:47,150 log 13084 21424 Internal Server Error: /products/4/
+Traceback (most recent call last):
+  File "C:\GB\.venvGB\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\Homework\22.04.24\hw_seminar_3\myapp\views.py", line 118, in product_full
+    return render(request, 'product_full.html', {'product': product, 'client': client, 'title': 'Полный товар', 'price': product.price, 'add_data': product.add_data}, {'order': order})
+                                                                                                                                                                                 ^^^^^
+NameError: name 'order' is not defined. Did you mean: 'Order'?
+ERROR 2024-05-01 22:02:47,202 basehttp 13084 21424 "GET /products/4/ HTTP/1.1" 500 145
+INFO 2024-05-01 22:11:38,038 autoreload 13084 23500 C:\GB\Homework\22.04.24\hw_seminar_3\myapp\views.py changed, reloading.
+INFO 2024-05-01 22:11:39,854 autoreload 16912 8432 Watching for file changes with StatReloader
+ERROR 2024-05-01 22:11:41,334 log 16912 9940 Internal Server Error: /products/4/
+Traceback (most recent call last):
+  File "C:\GB\.venvGB\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\Homework\22.04.24\hw_seminar_3\myapp\views.py", line 118, in product_full
+    return render(request, 'product_full.html', {'product': product, 'client': client, 'title': 'Полный товар', 'price': product.price, 'add_data': product.add_data}, {'order': order})
+                                                                                                                                                                                 ^^^^^
+NameError: name 'order' is not defined. Did you mean: 'Order'?
+ERROR 2024-05-01 22:11:41,334 basehttp 16912 9940 "GET /products/4/ HTTP/1.1" 500 145
+ERROR 2024-05-01 22:11:43,059 log 16912 9940 Internal Server Error: /products/4/
+Traceback (most recent call last):
+  File "C:\GB\.venvGB\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\Homework\22.04.24\hw_seminar_3\myapp\views.py", line 118, in product_full
+    return render(request, 'product_full.html', {'product': product, 'client': client, 'title': 'Полный товар', 'price': product.price, 'add_data': product.add_data}, {'order': order})
+                                                                                                                                                                                 ^^^^^
+NameError: name 'order' is not defined. Did you mean: 'Order'?
+ERROR 2024-05-01 22:11:43,064 basehttp 16912 9940 "GET /products/4/ HTTP/1.1" 500 145
+INFO 2024-05-01 22:11:47,539 basehttp 16912 13296 "GET /clients/all/ HTTP/1.1" 200 8866
+INFO 2024-05-01 22:11:49,473 basehttp 16912 13296 "GET /clients/1/ HTTP/1.1" 200 7815
+ERROR 2024-05-01 22:11:51,035 log 16912 13296 Internal Server Error: /products/4/
+Traceback (most recent call last):
+  File "C:\GB\.venvGB\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\Homework\22.04.24\hw_seminar_3\myapp\views.py", line 118, in product_full
+    return render(request, 'product_full.html', {'product': product, 'client': client, 'title': 'Полный товар', 'price': product.price, 'add_data': product.add_data}, {'order': order})
+                                                                                                                                                                                 ^^^^^
+NameError: name 'order' is not defined. Did you mean: 'Order'?
+ERROR 2024-05-01 22:11:51,035 basehttp 16912 13296 "GET /products/4/ HTTP/1.1" 500 145
+INFO 2024-05-01 22:12:07,804 autoreload 16912 8432 C:\GB\Homework\22.04.24\hw_seminar_3\myapp\views.py changed, reloading.
+INFO 2024-05-01 22:12:09,153 autoreload 9108 23644 Watching for file changes with StatReloader
+INFO 2024-05-01 22:12:11,564 basehttp 9108 25424 "GET /products/4/ HTTP/1.1" 200 5975
+INFO 2024-05-01 22:12:21,108 basehttp 9108 17628 "GET /products/4/ HTTP/1.1" 200 5975
+INFO 2024-05-01 22:12:25,997 basehttp 9108 17628 "GET /products/9/ HTTP/1.1" 200 5975
+INFO 2024-05-01 22:13:53,034 autoreload 9108 23644 C:\GB\Homework\22.04.24\hw_seminar_3\myapp\views.py changed, reloading.
+INFO 2024-05-01 22:13:54,411 autoreload 22128 23172 Watching for file changes with StatReloader
+INFO 2024-05-01 22:13:57,177 basehttp 22128 660 "GET /products/4/ HTTP/1.1" 200 6000
+INFO 2024-05-01 22:14:02,965 basehttp 22128 10540 "GET /clients/1/ HTTP/1.1" 200 7815
+INFO 2024-05-01 22:14:05,120 basehttp 22128 10540 "GET /products/4/ HTTP/1.1" 200 6000
+INFO 2024-05-01 22:14:09,733 basehttp 22128 10540 "GET /clients/1/ HTTP/1.1" 200 7815
+INFO 2024-05-01 22:14:11,599 basehttp 22128 10540 "GET /products/1/ HTTP/1.1" 200 5999
+INFO 2024-05-01 22:14:13,836 basehttp 22128 17040 "GET /clients/1/ HTTP/1.1" 200 7815
+INFO 2024-05-01 22:14:58,634 autoreload 22128 23172 C:\GB\Homework\22.04.24\hw_seminar_3\myapp\views.py changed, reloading.
+INFO 2024-05-01 22:15:00,560 autoreload 25016 8520 Watching for file changes with StatReloader
+INFO 2024-05-01 22:15:01,190 basehttp 25016 18420 "GET /products/4/ HTTP/1.1" 200 6000
+INFO 2024-05-01 22:15:09,499 basehttp 25016 3076 "GET /products/1/ HTTP/1.1" 200 5998
+INFO 2024-05-01 22:15:25,867 basehttp 25016 21184 "GET /products/1/ HTTP/1.1" 200 5998
+INFO 2024-05-01 22:16:16,270 basehttp 25016 12728 "GET /products/1/ HTTP/1.1" 200 6039
+INFO 2024-05-01 22:16:27,280 basehttp 25016 15856 "GET /clients/1/ HTTP/1.1" 200 7815
+INFO 2024-05-01 22:16:33,663 basehttp 25016 20972 "GET /clients/all/ HTTP/1.1" 200 8866
+INFO 2024-05-01 22:16:36,478 basehttp 25016 20972 "GET /clients/4/ HTTP/1.1" 200 7857
+INFO 2024-05-01 22:16:38,347 basehttp 25016 20972 "GET /products/1/ HTTP/1.1" 200 6039
+INFO 2024-05-01 22:17:00,959 basehttp 25016 23048 "GET /clients/4/ HTTP/1.1" 200 7857
+INFO 2024-05-01 22:17:06,398 basehttp 25016 18344 "GET /clients/all/ HTTP/1.1" 200 8866
+INFO 2024-05-01 22:22:44,309 autoreload 25016 8520 C:\GB\Homework\22.04.24\hw_seminar_3\myapp\views.py changed, reloading.
+INFO 2024-05-01 22:22:46,181 autoreload 18080 7336 Watching for file changes with StatReloader
+INFO 2024-05-01 22:22:46,439 basehttp 18080 2864 "GET /clients/1/ HTTP/1.1" 200 7815
+INFO 2024-05-01 22:22:48,747 basehttp 18080 2864 "GET /products/1/ HTTP/1.1" 200 6039
+INFO 2024-05-01 22:22:52,539 basehttp 18080 2864 "GET /clients/1/ HTTP/1.1" 200 7815
+INFO 2024-05-01 22:22:54,905 basehttp 18080 9404 "GET /clients/all/ HTTP/1.1" 200 8866
+INFO 2024-05-01 22:22:56,351 basehttp 18080 9404 "GET /client_about/4/ HTTP/1.1" 200 6180
+INFO 2024-05-01 22:22:57,839 basehttp 18080 9404 "GET /clients/4/ HTTP/1.1" 200 7857
+INFO 2024-05-01 22:22:59,408 basehttp 18080 9404 "GET /products/1/ HTTP/1.1" 200 6040
+INFO 2024-05-01 22:24:00,606 basehttp 18080 2408 "GET /products/1/ HTTP/1.1" 200 6070
+INFO 2024-05-01 22:24:09,521 basehttp 18080 4124 "GET /clients/4/ HTTP/1.1" 200 7857
+INFO 2024-05-01 22:24:12,585 basehttp 18080 4124 "GET /clients/all/ HTTP/1.1" 200 8866
+INFO 2024-05-01 22:24:14,570 basehttp 18080 16400 "GET /clients/1/ HTTP/1.1" 200 7815
+INFO 2024-05-01 22:24:16,484 basehttp 18080 16400 "GET /products/1/ HTTP/1.1" 200 6069
+INFO 2024-05-01 22:24:20,271 basehttp 18080 16400 "GET /clients/1/ HTTP/1.1" 200 7815
+INFO 2024-05-01 22:25:46,320 basehttp 18080 2720 "GET /products/1/ HTTP/1.1" 200 6069
+INFO 2024-05-01 22:27:36,006 basehttp 18080 20296 "GET /clients/1/ HTTP/1.1" 200 7815
+INFO 2024-05-01 22:27:38,414 basehttp 18080 20296 "GET /clients/all/ HTTP/1.1" 200 8866
+INFO 2024-05-01 22:27:42,125 basehttp 18080 20296 "GET /clients/2/ HTTP/1.1" 200 7857
+INFO 2024-05-01 22:27:45,968 basehttp 18080 3088 "GET /products/1/ HTTP/1.1" 200 6070

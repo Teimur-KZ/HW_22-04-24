@@ -20,6 +20,9 @@
         <td>Сумма заказа: {{ product.total_price }}</td>
     </tr>
     <tr>
+        <td>Последнея дата покупки этого товара этим клиентом: {{ order.order_data }}</td>
+    </tr>
+    <tr>
         <td><a href="{% url 'client_orders' client.id %}">Вернуться к заказам клиента</a></td>
     </tr>
 </table>

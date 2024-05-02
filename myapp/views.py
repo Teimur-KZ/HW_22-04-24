@@ -114,7 +114,10 @@ def product_full(request, product_id):
     product = get_object_or_404(Product, pk=product_id) # объект товара по его id
     client_id = request.session.get('client_id')
     client = get_object_or_404(Client, pk=client_id) # объект клиента по его id
-    return render(request, 'product_full.html', {'product': product, 'client': client, 'title': 'Полный товар', 'price': product.price, 'add_data': product.add_data})
+    order = Order.objects.filter(product=product, client=client).first()
+    return render(request, 'product_full.html',
+                  {'product': product, 'client': client, 'title': 'Полный товар', 'price': product.price,
+                   'add_data': product.add_data, 'order': order})
 
 def clients_all(request):
     clients = Client.objects.all()
