@@ -2663,3 +2663,375 @@ INFO 2024-04-30 17:52:24,566 autoreload 16532 19960 C:\GB\Homework\22.04.24\hw_s
 INFO 2024-04-30 17:52:27,018 autoreload 18844 19548 Watching for file changes with StatReloader
 INFO 2024-04-30 17:53:45,668 autoreload 18844 19548 C:\GB\Homework\22.04.24\hw_seminar_3\myapp\views.py changed, reloading.
 INFO 2024-04-30 17:53:47,308 autoreload 19396 4432 Watching for file changes with StatReloader
+INFO 2024-04-30 18:07:15,683 autoreload 16400 13972 Watching for file changes with StatReloader
+INFO 2024-04-30 18:07:16,161 basehttp 16400 16168 "GET /products/3/ HTTP/1.1" 200 5762
+INFO 2024-05-01 20:19:04,717 autoreload 24796 12452 Watching for file changes with StatReloader
+INFO 2024-05-01 20:19:08,055 basehttp 24796 21960 "GET / HTTP/1.1" 200 6000
+WARNING 2024-05-01 20:19:23,803 log 24796 1992 Not Found: /clients/
+WARNING 2024-05-01 20:19:23,803 basehttp 24796 1992 "GET /clients/ HTTP/1.1" 404 29611
+INFO 2024-05-01 20:21:13,874 autoreload 24796 12452 C:\GB\Homework\22.04.24\hw_seminar_3\myapp\views.py changed, reloading.
+INFO 2024-05-01 20:21:15,413 autoreload 17516 22788 Watching for file changes with StatReloader
+INFO 2024-05-01 20:21:18,195 basehttp 17516 23160 "GET /clients/all HTTP/1.1" 301 0
+ERROR 2024-05-01 20:21:18,305 log 17516 22944 Internal Server Error: /clients/all/
+Traceback (most recent call last):
+  File "C:\GB\.venvGB\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\Homework\22.04.24\hw_seminar_3\myapp\views.py", line 121, in clients_all
+    return render(request, 'clients_all.html', {'clients': clients, 'title': 'Список клиентов'})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: clients_all.html
+ERROR 2024-05-01 20:21:18,368 basehttp 17516 22944 "GET /clients/all/ HTTP/1.1" 500 145
+INFO 2024-05-01 20:38:35,085 basehttp 17516 3440 "GET /clients/all/ HTTP/1.1" 200 7572
+INFO 2024-05-01 20:38:43,486 basehttp 17516 22784 "GET /clients/1/ HTTP/1.1" 200 7663
+INFO 2024-05-01 20:38:48,373 basehttp 17516 5920 "GET /clients/11/ HTTP/1.1" 200 6059
+INFO 2024-05-01 20:39:02,870 basehttp 17516 24108 "GET /clients/all/ HTTP/1.1" 200 7625
+INFO 2024-05-01 20:42:44,907 basehttp 17516 22672 "GET /clients/all/ HTTP/1.1" 200 7860
+INFO 2024-05-01 20:43:29,389 basehttp 17516 16000 "GET /clients/all/ HTTP/1.1" 200 7923
+INFO 2024-05-01 20:43:55,033 basehttp 17516 2588 "GET /clients/all/ HTTP/1.1" 200 7924
+INFO 2024-05-01 20:44:50,138 basehttp 17516 24620 "GET /clients/all/ HTTP/1.1" 200 7936
+INFO 2024-05-01 20:44:51,740 basehttp 17516 24620 "GET /clients/all/ HTTP/1.1" 200 7936
+INFO 2024-05-01 20:46:12,101 basehttp 17516 23128 "GET /clients/all/ HTTP/1.1" 200 7824
+INFO 2024-05-01 20:46:24,642 basehttp 17516 14056 "GET /clients/all/ HTTP/1.1" 200 7824
+INFO 2024-05-01 20:46:48,225 basehttp 17516 22972 "GET /clients/1/ HTTP/1.1" 200 7663
+INFO 2024-05-01 20:51:20,096 autoreload 17516 22788 C:\GB\Homework\22.04.24\hw_seminar_3\myapp\views.py changed, reloading.
+INFO 2024-05-01 20:51:21,903 autoreload 4536 1400 Watching for file changes with StatReloader
+INFO 2024-05-01 20:51:22,331 basehttp 4536 16008 "GET /clients/1/ HTTP/1.1" 200 7663
+ERROR 2024-05-01 20:51:30,856 log 4536 23500 Internal Server Error: /clients/all/
+Traceback (most recent call last):
+  File "C:\GB\.venvGB\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\Homework\22.04.24\hw_seminar_3\myapp\views.py", line 121, in clients_all
+    return render(request, 'clients_all.html', {'clients': clients, 'title': 'Список клиентов'})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'client_about' not found. 'client_about' is not a valid view function or pattern name.
+ERROR 2024-05-01 20:51:30,917 basehttp 4536 23500 "GET /clients/all/ HTTP/1.1" 500 145
+ERROR 2024-05-01 20:54:55,377 log 4536 3504 Internal Server Error: /clients/all/
+Traceback (most recent call last):
+  File "C:\GB\.venvGB\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\Homework\22.04.24\hw_seminar_3\myapp\views.py", line 121, in clients_all
+    return render(request, 'clients_all.html', {'clients': clients, 'title': 'Список клиентов'})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'client_about' not found. 'client_about' is not a valid view function or pattern name.
+ERROR 2024-05-01 20:54:55,386 basehttp 4536 3504 "GET /clients/all/ HTTP/1.1" 500 145
+ERROR 2024-05-01 20:54:57,238 log 4536 3504 Internal Server Error: /clients/all/
+Traceback (most recent call last):
+  File "C:\GB\.venvGB\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\Homework\22.04.24\hw_seminar_3\myapp\views.py", line 121, in clients_all
+    return render(request, 'clients_all.html', {'clients': clients, 'title': 'Список клиентов'})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'client_about' not found. 'client_about' is not a valid view function or pattern name.
+ERROR 2024-05-01 20:54:57,248 basehttp 4536 3504 "GET /clients/all/ HTTP/1.1" 500 145
+ERROR 2024-05-01 20:54:58,624 log 4536 3504 Internal Server Error: /clients/all/
+Traceback (most recent call last):
+  File "C:\GB\.venvGB\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\Homework\22.04.24\hw_seminar_3\myapp\views.py", line 121, in clients_all
+    return render(request, 'clients_all.html', {'clients': clients, 'title': 'Список клиентов'})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'client_about' not found. 'client_about' is not a valid view function or pattern name.
+ERROR 2024-05-01 20:54:58,639 basehttp 4536 3504 "GET /clients/all/ HTTP/1.1" 500 145
+INFO 2024-05-01 20:56:20,990 autoreload 4536 1400 C:\GB\Homework\22.04.24\hw_seminar_3\myapp\urls.py changed, reloading.
+INFO 2024-05-01 20:56:22,036 autoreload 18612 21824 Watching for file changes with StatReloader
+INFO 2024-05-01 20:56:26,017 basehttp 18612 24448 "GET /clients/all/ HTTP/1.1" 200 8767
+ERROR 2024-05-01 20:57:02,804 log 18612 6980 Internal Server Error: /client_about/1/
+Traceback (most recent call last):
+  File "C:\GB\.venvGB\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\Homework\22.04.24\hw_seminar_3\myapp\views.py", line 125, in client_about
+    return render(request, 'client_about.html', {'client': client, 'title': 'Информация о клиенте'})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GB\.venvGB\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: client_about.html
+ERROR 2024-05-01 20:57:02,817 basehttp 18612 6980 "GET /client_about/1/ HTTP/1.1" 500 145
+INFO 2024-05-01 21:00:18,499 basehttp 18612 16616 "GET /clients/all/ HTTP/1.1" 200 8725
+INFO 2024-05-01 21:00:20,485 basehttp 18612 25556 "GET /clients/all/ HTTP/1.1" 200 8725
+INFO 2024-05-01 21:00:54,479 basehttp 18612 21928 "GET /clients/all/ HTTP/1.1" 200 8714
+INFO 2024-05-01 21:07:41,388 basehttp 18612 1136 "GET /client_about/1/ HTTP/1.1" 200 5821
+INFO 2024-05-01 21:08:35,826 basehttp 18612 24312 "GET /clients/all/ HTTP/1.1" 200 8714
+INFO 2024-05-01 21:08:37,395 basehttp 18612 24312 "GET /client_about/1/ HTTP/1.1" 200 6027
+INFO 2024-05-01 21:08:40,666 basehttp 18612 24312 "GET /clients/1/ HTTP/1.1" 200 7663
+INFO 2024-05-01 21:08:55,801 basehttp 18612 24556 "GET /clients/all/ HTTP/1.1" 200 8714
+INFO 2024-05-01 21:10:04,154 basehttp 18612 10444 "GET /client_about/1/ HTTP/1.1" 200 6027
+WARNING 2024-05-01 21:11:01,907 log 18612 7340 Not Found: /contacts/
+WARNING 2024-05-01 21:11:01,907 basehttp 18612 7340 "GET /contacts/ HTTP/1.1" 404 29611
+WARNING 2024-05-01 21:11:03,503 log 18612 7340 Not Found: /user_lk/
+WARNING 2024-05-01 21:11:03,505 basehttp 18612 7340 "GET /user_lk/ HTTP/1.1" 404 29611
+INFO 2024-05-01 21:12:11,338 basehttp 18612 25576 "GET /clients/all/ HTTP/1.1" 200 8869
+INFO 2024-05-01 21:12:52,612 basehttp 18612 16448 "GET /clients/all/ HTTP/1.1" 200 8890
+INFO 2024-05-01 21:13:53,452 basehttp 18612 23276 "GET /clients/all/ HTTP/1.1" 200 8866
+WARNING 2024-05-01 21:13:57,771 log 18612 23276 Not Found: /clients_all/
+WARNING 2024-05-01 21:13:57,771 basehttp 18612 23276 "GET /clients_all/ HTTP/1.1" 404 29763
+WARNING 2024-05-01 21:14:00,297 log 18612 23276 Not Found: /clients_all/
+WARNING 2024-05-01 21:14:00,297 basehttp 18612 23276 "GET /clients_all/ HTTP/1.1" 404 29763
+INFO 2024-05-01 21:14:03,811 basehttp 18612 19276 "GET / HTTP/1.1" 200 6152
+INFO 2024-05-01 21:14:11,325 basehttp 18612 19276 "GET /clients/all/ HTTP/1.1" 200 8866
+INFO 2024-05-01 21:14:30,819 basehttp 18612 23652 "GET /clients/all/ HTTP/1.1" 200 8866
+INFO 2024-05-01 21:14:32,184 basehttp 18612 23004 "GET / HTTP/1.1" 200 6152
+INFO 2024-05-01 21:14:33,012 basehttp 18612 23004 "GET /about/ HTTP/1.1" 200 5591
+INFO 2024-05-01 21:14:33,937 basehttp 18612 23004 "GET /clients/all/ HTTP/1.1" 200 8866
+INFO 2024-05-01 21:14:37,975 basehttp 18612 23004 "GET / HTTP/1.1" 200 6152

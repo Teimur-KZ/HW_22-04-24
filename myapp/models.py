@@ -2,6 +2,7 @@ from django.db import models
 
 # Create your models here.
 
+
 class Client(models.Model): # создание модели Client.
     name = models.CharField(max_length=50)
     email = models.EmailField(unique=True)# уникальное поле, не может быть одинаковых email

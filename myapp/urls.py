@@ -9,6 +9,8 @@ urlpatterns = [
     path('about/', views.about, name='about'), # путь к представлению about
     path('error_404/', views.error_404, name='error_404'), # путь к представлению error_404
     path('clients/<int:client_id>/', views.client_orders_post, name='client_orders'), # путь к представлению client_orders
+    path('clients/all/', views.clients_all, name='clients_all'), # путь к представлению clients_all
+    path('client_about/<int:client_id>/', views.client_about, name='client_about'), # путь к представлению client_about
     path('products/<int:product_id>/', views.product_full, name='product_full'),
 
 

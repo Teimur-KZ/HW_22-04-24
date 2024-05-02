@@ -116,4 +116,12 @@ def product_full(request, product_id):
     client = get_object_or_404(Client, pk=client_id) # объект клиента по его id
     return render(request, 'product_full.html', {'product': product, 'client': client, 'title': 'Полный товар', 'price': product.price, 'add_data': product.add_data})
 
+def clients_all(request):
+    clients = Client.objects.all()
+    return render(request, 'clients_all.html', {'clients': clients, 'title': 'Список клиентов'})
+
+def client_about(request, client_id):
+    client = get_object_or_404(Client, pk=client_id)
+    return render(request, 'client_about.html', {'client': client, 'title': 'Информация о клиенте'})
+
 # Запуск сервера: py manage.py runserver
